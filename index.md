@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+# IB.js
+IB.js is a 1.52 kB (minified) file based on [ImageBox](https://github.com/tobiasroeder/ImageBox) but way more simple. If you need a more advanced LightBox with keyboard/touch controls, multiple galleries and more, view [ImageBox](https://github.com/tobiasroeder/ImageBox#readme) on GitHub.
 
-You can use the [editor on GitHub](https://github.com/tobiasroeder/IB.js/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Installation
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Add this at the of `</head>`:
+```html
+<script src="https://cdn.jsdelivr.net/gh/tobiasroeder/IB.js@1.0.0/dist/ib.min.js" defer></script>
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## How To
 
-### Jekyll Themes
+Add to the `img` tag the attribute `data-ib`. It's that easy.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tobiasroeder/IB.js/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```html
+<div class="images">
+    <img src="img/img01.png" data-ib>
+    <img src="img/img02.png" data-ib>
+    <img src="img/img03.png" data-ib>
+    <img src="img/img04.png" data-ib>
+</div>
+```
 
-### Support or Contact
+The IB.js file will automatically execute the `ib.init()` method after window load.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Options (CSS)
+
+```css
+#ib {
+    /* change fade duration */
+    --ib-fade-duration: 400ms;
+
+    /* change background color */
+    background-color: rgba(50, 207, 217, 0.9);
+
+    /* change cursor for indicate closing IB */
+    cursor: pointer;
+}
+
+/* change cursor for indicate opening IB */
+img[data-ib] {
+    cursor: pointer;
+}
+```
+
+## Example
+
+[Try it out](https://codepen.io/tobiasroeder/pen/zYEgWoM)

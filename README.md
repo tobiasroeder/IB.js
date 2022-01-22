@@ -1,5 +1,5 @@
 # IB.js
-IB.js is a 1.67 kB (minified) file based on [ImageBox](https://github.com/tobiasroeder/ImageBox) but way more simple. If you need a more advanced LightBox with keyboard/touch controls, multiple galleries and more, view [ImageBox](https://github.com/tobiasroeder/ImageBox#readme) on GitHub.
+IB.js is a 1.52 kB (minified) file based on [ImageBox](https://github.com/tobiasroeder/ImageBox) but way more simple. If you need a more advanced LightBox with keyboard/touch controls, multiple galleries and more, view [ImageBox](https://github.com/tobiasroeder/ImageBox#readme) on GitHub.
 
 ## Installation
 

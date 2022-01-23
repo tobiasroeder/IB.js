@@ -10,7 +10,7 @@ Add this at the of `</head>`:
 
 ## How To
 
-Add to the `img` tag the attribute `data-ib`. It's that easy.
+Add to the `<img>` tag the attribute `data-ib`. It's that easy.
 
 ```html
 <div class="images">

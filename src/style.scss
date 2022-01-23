@@ -7,7 +7,7 @@ img[data-ib] {
 }
 
 #ib {
-    --fade-duration: 300ms;
+    --ib-fade-duration: 300ms;
 
     visibility: hidden;
     opacity: 0;
@@ -23,13 +23,13 @@ img[data-ib] {
     &.fade-in {
         visibility: visible;
         opacity: 1;
-        transition: visibility 0s linear 0s, opacity var(--fade-duration);
+        transition: visibility 0s linear 0s, opacity var(--ib-fade-duration);
     }
 
     &.fade-out {
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0s linear var(--fade-duration), opacity var(--fade-duration);
+        transition: visibility 0s linear var(--ib-fade-duration), opacity var(--ib-fade-duration);
     }
 
     img {

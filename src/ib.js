@@ -118,4 +118,4 @@ let ib = {
 /**
  * automatically initialize the IB after window load
  */
-window.onload = ib.init;
+window.addEventListener('load', ib.init);

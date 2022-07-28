@@ -3,7 +3,7 @@ IB.js is a 1.52 kB (minified) file based on [ImageBox](https://github.com/tobias
 
 ## Installation
 
-Add this at the of `</head>`:
+Add this before the `</head>`:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/tobiasroeder/IB.js@1.0.0/dist/ib.min.js" defer></script>
 ```

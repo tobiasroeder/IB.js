@@ -4,7 +4,7 @@
  * 
  * @name IB.js
  * @author Tobias Roeder
- * @version 1.0.0
+ * @version 1.0.1
  * @license MIT
  * @see https://github.com/tobiasroeder/IB.js
  */
@@ -16,7 +16,7 @@ let ib = {
     /**
      * IB version
      */
-    version: '1.0.0',
+    version: '1.0.1',
 
     /**
      * main IB element
@@ -118,4 +118,4 @@ let ib = {
 /**
  * automatically initialize the IB after window load
  */
-window.onload = ib.init;
+window.addEventListener('load', ib.init);
